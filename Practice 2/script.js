@@ -21,6 +21,11 @@ correctIndex: 0
 question: "Which language styles web pages?",
 answers: ["HTML", "JavaScript", "CSS", "Python"],
 correctIndex: 2
+},
+{
+question: "Which language is used for web development to create interactive effects within web browsers?",
+answers: ["HTML", "JavaScript", "CSS", "Python"],
+correctIndex: 1
 }
 ];
 

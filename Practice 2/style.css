@@ -1,20 +1,39 @@
 h1{
-    background-color: purple;
-    color: orangered;
-    text-align: left;
+    background-color: greenyellow;
+    color: rgb(15, 15, 14);
+    text-align: center;
 }
-
+h2{
+    font-style: italic;
+    background-color: green;
+    color: rgb(28, 25, 25);
+    text-align: center;
+}
 body {
-    background-color: #0000ff;
+    background-color: #7272d1;
     color: white;
     line-height: 1.5;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+
 }
 
 button {
     background-color: orange;
     color: white;
-    padding: 10px 15px;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+    margin: 10px; 
+    text-align: center;
 }   
+
+#nextBtn {
+    background-color: purple;
+    color: rgb(18, 185, 132); 
+    font-weight: bold; 
+}
