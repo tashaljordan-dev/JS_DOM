@@ -1,0 +1,13 @@
+h1 {
+    font-weight: bold; 
+    color: black; 
+    background-color: green;
+    text-align: center;
+}
+
+body {
+    background-color: blue ;
+    color: black; 
+    line-height: 1.6; 
+    padding: 10px;
+}
