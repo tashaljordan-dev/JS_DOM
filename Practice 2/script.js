@@ -18,13 +18,13 @@ const questions = [
   },
   {
     question: "Which language styles web pages?",
-    answers: ["HTML", "JavaScript", "CSS", "Python"],
-    correctIndex: 2
+    answers: ["HTML", "JavaScript", "CSS", "Python"], //array
+    correctIndex: 2 //correct answer 
   },
   {
     question: "Which language is used for web development to create interactive effects within web browsers?",
-    answers: ["HTML", "JavaScript", "CSS", "Python"],
-    correctIndex: 1
+    answers: ["HTML", "JavaScript", "CSS", "Python"], //array
+    correctIndex: 1 //correct answer
   }
 ];
 

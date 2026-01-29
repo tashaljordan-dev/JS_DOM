@@ -2,29 +2,40 @@ h1{
     background-color: greenyellow;
     color: rgb(15, 15, 14);
     text-align: center;
+    border: 5px solid rgb(232, 28, 174);
+    border-radius: 5px;
 }
-h2{
+h2, h3{
     font-style: italic;
     background-color: green;
     color: rgb(28, 25, 25);
     text-align: center;
 }
+
+
 body {
-    background-color: #7272d1;
+    background-color: rgb(104, 118, 117);
     color: white;
     line-height: 1.5;
     font-weight: bold;
     padding: 10px;
     font-size: 24px;
     text-align: center;
-
+    background-image: url("images/binary.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 button {
     background-color: orange;
-    color: white;
+    color: rgb(92, 5, 110);
     padding: 15px 30px;
-    border: none;
+    border: 2px solid rgb(28, 59, 232);
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
