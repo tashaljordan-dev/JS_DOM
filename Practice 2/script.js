@@ -1,9 +1,13 @@
 console.log("JS connected!");
 
+// DOM Elements
 const questionEl = document.getElementById("question");
 const answerBtns = document.querySelectorAll(".answer-btn");
 const feedbackEl = document.getElementById("feedback");
 const nextBtn = document.getElementById("nextBtn");
+const resetBtn = document.getElementById("resetBtn");
+
+//Quiz Data
 
 const questions = [
   {
@@ -14,7 +18,7 @@ const questions = [
       "Home Tool Markup Language",
       "Hyperlinks and Text Markup Language"
     ],
-    correctIndex: 0
+    correctIndex: 0 // correct answer
   },
   {
     question: "Which language styles web pages?",
@@ -28,8 +32,11 @@ const questions = [
   }
 ];
 
+// State the variables 
 let currentQuestionIndex = 0;
 let score = 0; // <-- Track correct answers
+
+// Show the current question
 
 function showQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
@@ -48,6 +55,7 @@ function showQuestion() {
 
 showQuestion();
 
+// Handle answer clicks
 answerBtns.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     const correctIndex = questions[currentQuestionIndex].correctIndex;
@@ -58,12 +66,13 @@ answerBtns.forEach((btn, index) => {
     } else {
       feedbackEl.textContent = "❌ Incorrect. Try the next one!";
     }
-
-    // Disable all buttons after answer
+// Disable answer button after a selection
     answerBtns.forEach(button => button.disabled = true);
   });
 });
 
+// move to the next question in the quiz or finish the quiz 
+    // move to the next question
 nextBtn.addEventListener("click", () => {
   currentQuestionIndex++;
 
@@ -79,6 +88,8 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
+// Return feedback based on score 
+
 function giveFeedback(score) {
   if (score === 3) {
     return "🎉 Great job! You got all 3 correct!";
@@ -91,16 +102,18 @@ function giveFeedback(score) {
   }
 }
 
+// reset quiz to the beginning // could also have written this as a function
 document.getElementById("resetBtn").addEventListener("click", () => {
-  // Reset variables
   currentQuestionIndex = 0;
   score = 0;
 
-  // Show buttons again
-  answerBtns.forEach(btn => btn.style.display = "inline-block");
+  answerBtns.forEach(btn => 
+    btn.style.display = "inline-block");
+
   nextBtn.style.display = "inline-block";
   document.getElementById("resetBtn").style.display = "none";
 
-  // Show the first question
+
+// Start the Quiz
   showQuestion();
 });
